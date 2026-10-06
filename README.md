@@ -15,5 +15,5 @@ Aplicación web interactiva desarrollada para gestionar listas de compra organiz
 ## Instalación y ejecución
 1. Clona el repositorio desde la terminal:
    ```bash
-   git clone [https://github.com/Mapesho06/shopping-list.git](https://github.com/Mapesho06/shopping-list.git)
+   git clone https://github.com/Mapesho06/shopping-list.git
 
