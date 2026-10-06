@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de la compra</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="contenedor-cabecera">
+    <div class="icono-cabecera">🛒</div>
+    <div class="texto-cabecera">
+      <h1>Tu cesta de la compra</h1>
+      <p>Organiza tus categorías y ¡no olvides nada!</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Section for the user to create their categories -->
+    <section class="contenedor-nueva-categoria">
+      <h3>¡Crea tu propia categoría!</h3>
+      <form id="nueva-categoria">
+        <input type="text" placeholder="Ej. Caprichos, especias..." required>
+        <button type="submit">Crear</button>
+      </form>
+    </section>
+
+    <!-- Section containing the containers of the created categories -->    
+    <section class="contenedor-categoria">
+      
+      <details class="tarjeta-categoria">
+        <summary> <!-- Delete category button provided for user choice -->
+          <span>Carnicería</span>
+          <button type="button" class="btn-eliminar-categoria" title="Eliminar categoría">×</button>
+        </summary>
+        <!-- Form for the user to add products to the list -->
+        <form>
+          <input type="text" placeholder="Ej.Carne picada">
+          <button type="submit">Añadir</button>
+        </form>
+
+        <ul class="lista-productos"></ul>
+      </details>
+
+      <details class="tarjeta-categoria">
+        <summary>
+          <span>Pescadería</span>
+          <button type="button" class="btn-eliminar-categoria" title="Eliminar categoría">×</button>
+        </summary>
+
+        <form>
+          <input type="text" placeholder="Ej. Lenguado">
+          <button type="submit">Añadir</button>
+        </form>
+
+        <ul class="lista-productos"></ul>
+      </details>
+
+      <details class="tarjeta-categoria">
+        <summary>
+          <span>Fruta / Verdura</span>
+          <button type="button" class="btn-eliminar-categoria" title="Eliminar categoría">×</button>
+        </summary>
+
+        <form>
+          <input type="text" placeholder="Ej. Platanos">
+          <button type="submit">Añadir</button>
+        </form>
+
+        <ul class="lista-productos"></ul>
+      </details>
+
+      <details class="tarjeta-categoria">
+        <summary>
+          <span>Charcutería</span>
+          <button type="button" class="btn-eliminar-categoria" title="Eliminar categoría">×</button>
+        </summary>
+
+        <form>
+          <input type="text" placeholder="Ej. Queso">
+          <button type="submit">Añadir</button>
+        </form>
+
+        <ul class="lista-productos"></ul>
+      </details>
+
+      <details class="tarjeta-categoria">
+        <summary>
+          <span>Higiene Hogar</span>
+          <button type="button" class="btn-eliminar-categoria" title="Eliminar categoría">×</button>
+        </summary>
+
+        <form>
+          <input type="text" placeholder="Ej. Fregasuelos">
+          <button type="submit">Añadir</button>
+        </form>
+
+        <ul class="lista-productos"></ul>
+      </details>
+    </section>
+
+    <!-- Global Summary List Section -->
+    <section class="contenedor-resumen">
+      <h2>Lista de la compra (Resumen)</h2>
+      <ul id="lista-resumen">
+        <!-- JavaScript will insert the selected products here -->
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+    
+</body>
+</html>
