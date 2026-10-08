@@ -4,3 +4,6 @@ Thumbs.db
 
 # Editor settings
 .vscode/
+
+# Dependencies
+node_modules/

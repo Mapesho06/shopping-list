@@ -1,0 +1,25 @@
+{
+  "name": "lista-compra",
+  "version": "1.0.0",
+  "description": "Aplicación web interactiva desarrollada para gestionar listas de compra organizadas por categorías dinámicas y sincronizadas en tiempo real con una lista resumen global de productos pendientes.",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mapesho06/shopping-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mapesho06/shopping-list/issues"
+  },
+  "homepage": "https://github.com/Mapesho06/shopping-list#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

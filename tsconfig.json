@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* 1. Estructura de carpetas */
+    "rootDir": "./src",      // Dónde escribes el código fuente (.ts)
+    "outDir": "./dist",      // Dónde deposita el compilador el código generado (.js)
+
+    /* 2. Entorno y compatibilidad web */
+    "target": "ES2020",      // Versión moderna de JS que entienden todos los navegadores
+    "module": "ES2020",      // Permite usar "import" y "export" modernos en el navegador
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Le enseña a TypeScript qué son "document", "window", botones, etc.
+    
+
+    /* 3. Ayuda de desarrollo */
+    "sourceMap": true,       // Permite depurar directamente tu código .ts en la consola del navegador
+
+    /* 4. Buenas prácticas de la empresa (Guía MWT Apartado 2.3) */
+    "strict": true,                 // Activa el modo estricto de TypeScript
+    "noImplicitAny": true,          // Prohíbe crear variables sin tipo (evita el tipo "any")
+    "strictNullChecks": true,       // Te avisa si una variable puede ser null/undefined antes de que rompa la app
+    "noUnusedLocals": true,         // Te avisa si declaras una variable y luego no la usas
+    "noUnusedParameters": true,     // Te avisa si una función recibe un parámetro que no utilizas
+    "skipLibCheck": true            // Evita perder tiempo compilando los archivos internos de librerías externas
+  },
+  "include": ["src/**/*"]           // Le dice al compilador: "revisa únicamente lo que esté dentro de src"
+}
